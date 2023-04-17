@@ -1,0 +1,40 @@
+.content {
+    padding-top: 4rem;
+}
+
+.Heading {
+    text-align: center;
+}
+
+.form1 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.newsarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+.btn1 {
+    cursor: pointer;
+    margin-left: .5rem;
+    width: 7%;
+    background-color: #17cfa7;
+    border-radius: 8px;
+    border: 2px solid rgb(28, 24, 24);
+    color: rgb(28, 24, 24);
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: rgb(28, 24, 24);
+    border: 2px solid #17cfa7;
+    color: #17cfa7;
+}

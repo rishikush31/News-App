@@ -1,0 +1,32 @@
+
+.nvbar {
+    background-color:rgb(21, 20, 20);
+    display: flex;
+    width: 100rem;
+    flex-flow: wrap;
+    overflow: hidden;
+    position: fixed;
+  }
+  .it a {
+    float: left;
+    display: block;
+    color: #17cfa7;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .it a:hover {
+    background-color: #17cfa7;
+    color: black;
+  }
+  .it .icon {
+    display: none;
+  }
+  .logo
+  {
+    padding: 1rem;
+    color: #17cfa7;
+    font-weight: bolder;
+  }
