@@ -10,7 +10,7 @@ function Content() {
         console.log(typeof(gp));
         setQy(gp);
         (async () => {
-            const res = await fetch(`https://newsapi.org/v2/everything?q=${qy}&apiKey=72e061ad05054e69b185ad7b3b72802c`);
+            const res = await fetch(`https://gnews.io/api/v4/top-headlines?q=${qy}&apikey=0882b34381a84633c123e829a0266900`);
             const da = await res.json();
             setData(da.articles);
             console.log(data);
@@ -23,7 +23,7 @@ function Content() {
     }
     useEffect((qy) => {
         (async () => {
-            const res = await fetch(`https://newsapi.org/v2/everything?q=${qy}&apiKey=72e061ad05054e69b185ad7b3b72802c`);
+            const res = await fetch(`https://gnews.io/api/v4/top-headlines?q=${qy}&apikey=0882b34381a84633c123e829a0266900`);
             const da = await res.json();
             setData(da.articles);
         })();
@@ -43,8 +43,8 @@ function Content() {
             <div className="newsarea">
                 {
                 data.map(news => <NewsBox
-                    urlToImage={(!(news.urlToImage===null))?news.urlToImage:defa[0].img}
-                    author={(!(news.author===null))?news.author:defa[0].author}
+                    image={(!(news.image===null))?news.image:defa[0].img}
+                    author={(!(news.source.name===null))?news.source.name:defa[0].author}
                     title={news.title}
                     description={news.description}
                     story={news.content}

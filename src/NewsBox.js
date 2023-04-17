@@ -1,9 +1,9 @@
 import './News_box.css';
-function NewsBox({ urlToImage, author, title, description, story, publishedAt, url }) {
+function NewsBox({ image, author, title, description, story, publishedAt, url }) {
     return (
         <div className="column">
             <div className="newsimg">
-                <img src={urlToImage} alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="con">
                 <h2 className='title'>{title}</h2>
